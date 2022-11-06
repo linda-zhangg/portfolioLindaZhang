@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Sofia;
+    src: url("Sofia.otf") format("opentype");
+
+}
+/*global styling*/
+:root{
+    --background: #fcf6ec;
+    --bigtextbox: #fff0d7;
+    --titletextbox: #ffead3;
+    --headertext: #5d3526;
+    --headertext2: #824630;
+    --bodytext: #b6735e;
+    --navbartext: #d76953;
+    --accent1: #e88c75;
+    --accent2: #fed269;
+    --accent3: #ffad39;
+    --accent4: #b2b671;
+
+}
+/* ----------------------------------- */
+
+/*structure styling*/
+body{
+    display:flex;
+    margin: 0;
+    background-color: var(--background);
+}
+aside{
+    height: 100vh;
+    flex: 1 1 0px;
+}
+main{
+    /* Styles */
+    height: 100vh;
+    width: 50vw;
+
+    /* Centre content */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Content styles */
+    gap: 1.5rem;
+}
+#titlecard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bigtextbox);
+    width: 90%;
+    height: 20vw;
+    padding: 4rem 0;
+    border-radius: 2rem;
+}
+/* ----------------------------------- */
+
+/*side navs*/
+#sidenav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex: 1 1 0px;
+}
+#sidenav #navlinks{
+    list-style-type: none;
+    padding-left: 0;
+    width:100%;
+
+}
+#navlinks li{
+    display:flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+
+}
+/* ----------------------------------- */
+
+/*  icon styling*/
+aside{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+#icons{
+    padding-left: 0;
+    width:100%;
+}
+#icons li{
+    display:flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+svg{
+    width: 3.5vw;
+}
+
+/* ----------------------------------- */
+
+/* text styles */
+h2{
+    font-family: 'Gaegu', cursive;
+    color:var(--headertext);
+    font-size: 2vw;
+    background-color: var(--titletextbox);
+    padding: 0.75rem 1em;
+    border-radius: 2em;
+}
+#title, #title2{
+    font-weight: normal;
+    font-size: 9vw;
+    font-family: 'Sofia', cursive;
+    text-align: center;
+    margin: 0;
+    transform: rotateZ(-5deg);
+    text-shadow: 4px 4px #82463050;
+}
+#title{
+    color: var(--headertext);
+}
+#title2{
+    margin-top: -0.5em;
+    display: block;
+    color:var(--headertext2);
+}
+.link{
+    font-family: 'Gaegu', cursive;
+    font-weight: bold;
+    color: var(--navbartext);
+    background-color: var(--titletextbox);
+    text-decoration: none;
+    padding: 0.75rem 1em;
+    border-radius: 2em;
+    font-size: 2vw;
+}
+/* ----------------------------------- */
+
+
+
+@media screen and (max-width: 1200px){ /* Laptop */
+
+
+}
+
+
+@media screen and (max-width: 960px){ /* Tablet */
+
+}
+
+
+
+@media screen and (max-width: 850px){ /* Large-Mobile */
+    body{
+        flex-direction: column-reverse;
+    }
+    main{
+        height:unset;
+        width:unset;
+    }
+    #navlinks li{
+        display: inline-block;
+    }
+    #sidenav #navlinks{
+        display: flex;
+        justify-content: center;
+    }
+    #icons li{
+        display: inline-block;
+        margin:0 2.5rem;
+    }
+    #icons{
+        width: unset;
+    }
+    .link{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    #title, #title2{
+        font-size: 18vw;
+    }
+    svg{
+        width: 10vw;
+    }
+    #titlecard{
+        height: 24vw;
+    }
+}
+
+@media screen and (max-width: 520px){ /* Mobile */
+}
