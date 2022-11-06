@@ -137,6 +137,38 @@ h2{
 }
 /* ----------------------------------- */
 
+.flower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.popin{
+    width: 0rem;
+    transition: width 1s, height 1s;
+}
+
+.spin{
+    animation: spin 15s infinite linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+
+
+/* ----------------------------------- */
+
 
 
 @media screen and (max-width: 1200px){ /* Laptop */
@@ -192,3 +224,4 @@ h2{
 
 @media screen and (max-width: 520px){ /* Mobile */
 }
+
