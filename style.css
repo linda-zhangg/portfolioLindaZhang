@@ -1,9 +1,11 @@
+/*global styling*/
+
+/* fonts */
 @font-face {
     font-family: Sofia;
     src: url("Sofia.otf") format("opentype");
-
 }
-/*global styling*/
+/* colour palette */
 :root{
     --background: #fcf6ec;
     --bigtextbox: #fff0d7;
@@ -20,7 +22,7 @@
 }
 /* ----------------------------------- */
 
-/*structure styling*/
+/* structure styling */
 body{
     display:flex;
     margin: 0;
@@ -56,7 +58,7 @@ main{
 }
 /* ----------------------------------- */
 
-/*side navs*/
+/* side navs */
 #sidenav{
     display: flex;
     align-items: center;
@@ -78,7 +80,7 @@ main{
 }
 /* ----------------------------------- */
 
-/*  icon styling*/
+/* icon styling */
 aside{
     display: flex;
     align-items:center;
@@ -100,6 +102,9 @@ svg{
 /* ----------------------------------- */
 
 /* text styles */
+.subtitle{
+   
+}
 h2{
     font-family: 'Gaegu', cursive;
     color:var(--headertext);
@@ -107,6 +112,7 @@ h2{
     background-color: var(--titletextbox);
     padding: 0.75rem 1em;
     border-radius: 2em;
+    z-index: 2;
 }
 #title, #title2{
     font-weight: normal;
@@ -137,11 +143,20 @@ h2{
 }
 /* ----------------------------------- */
 
-.flower{
+/* shape styling */
+.flowerleaf{
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
+    z-index: 0;
+}
+#blobleaf{
+    transform: rotateZ(25deg);
+}
+#maple{
+    z-index: 1;
+    background-color: blue;
 }
 
 .popin{
@@ -152,7 +167,6 @@ h2{
 .spin{
     animation: spin 15s infinite linear;
 }
-
 @keyframes spin{
     from{
         transform: rotateZ(0deg);
@@ -162,66 +176,36 @@ h2{
     }
 }
 
-
-
-
-
+.float{
+	animation: float 6s infinite ease-in-out;
+}
+@keyframes float{
+    0% {
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(3vw);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
 
 /* ----------------------------------- */
 
-
-
-@media screen and (max-width: 1200px){ /* Laptop */
-
-
-}
-
-
-@media screen and (max-width: 960px){ /* Tablet */
-
-}
-
-
+/* responsive queries */
 
 @media screen and (max-width: 850px){ /* Large-Mobile */
-    body{
-        flex-direction: column-reverse;
-    }
-    main{
-        height:unset;
-        width:unset;
-    }
-    #navlinks li{
-        display: inline-block;
-    }
-    #sidenav #navlinks{
-        display: flex;
-        justify-content: center;
-    }
-    #icons li{
-        display: inline-block;
-        margin:0 2.5rem;
-    }
-    #icons{
-        width: unset;
-    }
-    .link{
-        font-size: 4vw;
-    }
-    h2{
-        font-size: 5vw;
-    }
-    #title, #title2{
-        font-size: 18vw;
-    }
-    svg{
-        width: 10vw;
-    }
-    #titlecard{
-        height: 24vw;
-    }
-}
-
-@media screen and (max-width: 520px){ /* Mobile */
+    body{flex-direction: column-reverse;}
+    main{height:unset; width:unset;}
+    #navlinks li{display: inline-block;}
+    #sidenav #navlinks{display: flex; justify-content: center;}
+    #icons li{display: inline-block; margin:0 2.5rem;}
+    #icons{width: unset;}
+    .link{font-size: 4vw;}
+    h2{font-size: 5vw;}
+    #title, #title2{font-size: 18vw;}
+    svg{width: 10vw;}
+    #titlecard{height: 24vw;}
 }
 
