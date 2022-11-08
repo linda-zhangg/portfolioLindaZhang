@@ -70,7 +70,9 @@ main{
     list-style-type: none;
     padding-left: 0;
     width:100%;
-
+}
+a.link:hover{
+    color: var(--accent4);
 }
 #navlinks li{
     display:flex;
@@ -98,7 +100,6 @@ aside{
 svg{
     width: 3.5vw;
 }
-
 /* ----------------------------------- */
 
 /* text styles */
