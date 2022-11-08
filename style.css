@@ -149,12 +149,16 @@ h2{
 /* ----------------------------------- */
 
 /* shape styling */
+
+/* flower or leaf */
 .flowerleaf{
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 0;
+    width: 4rem;
+    height: 4rem;
 }
 #blobleaf{
     transform: rotateZ(25deg);
@@ -195,6 +199,75 @@ h2{
     }
 }
 
+/* background */
+.windowsim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.backgroundline{
+    position: absolute;
+    z-index: -1;
+    width: 12rem; 
+    height:12rem;
+}
+#leftcornerrainbow{
+    transform: rotateZ(120deg);
+}
+#leftgreensquiggle{
+    transform: rotateZ(140deg);
+}
+#leftbrowntulip{
+    width: 5rem;
+    height:10rem;
+}
+#bottomdarkgreenblob{
+    transform: rotateZ(90deg);
+}
+#bottomrightrainbow{
+    transform: rotateZ(-45deg);
+}
+#rightopwhitesquiggle{
+    transform: rotateZ(260deg);
+}
+#topbrowonsquiggles{
+    width: 6rem;
+    height:12rem;
+    transform: rotateZ(70deg);
+}
+#topgreenleaf{
+    width: 2.5rem;
+    height:5rem;
+    transform: rotateZ(240deg);
+}
+
+.backgroundaccent{
+    position: absolute;
+    z-index: -1;
+    width: 3rem; 
+    height:3rem;
+}
+#beigedotsaccent{
+    width: 1.5rem;
+    transform: rotateZ(90deg);
+}
+#pinkcrossesaccent{
+    width: 4rem;
+}
+#rainbowaccent1{
+    transform: rotateZ(-45deg);
+}
+#hashaccent{
+    transform: rotateZ(25deg);
+}
+#rainbowaccent2{
+    transform: rotateZ(30deg);
+}
+
+
 /* ----------------------------------- */
 
 /* responsive queries */
@@ -208,8 +281,16 @@ h2{
     #icons{width: unset;}
     .link{font-size: 4vw;}
     h2{font-size: 5vw;}
-    #title, #title2{font-size: 18vw;}
+    #title, #title2{font-size: 16vw;}
     svg{width: 10vw;}
     #titlecard{height: 24vw;}
+    .flowerleaf{width:2rem; height: 2rem;}
+    .backgroundline{width: 5rem; height: 5rem;}
+    #leftbrowntulip{width: 2.5rem; height: 5rem;}
+    #topbrowonsquiggles{width: 5rem; height: 10rem;}
+    #topgreenleaf{width: 2rem; height:4rem;}
+    .backgroundaccent{width:1.5rem; height:1.5rem;}
+    #beigedotsaccent{width:1rem; height:2rem;}
+    #pinkcrossesaccent{width: 2rem; height:1.5rem;}
 }
 
