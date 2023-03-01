@@ -111,10 +111,6 @@ a.link:hover{
     text-shadow: 4px 4px #82463050;
     
 }
-/* #topnavtitle2{
-    color:var(--headertext2);
-    font-size: 5vw;
-}  */
 #topnavlinks{
     list-style-type: none;
 }
@@ -339,8 +335,6 @@ h2{
 
     /* other */
     #topnavtitle{display: none;}
-    /* #topnavtitle1{padding-left: 0em;} */
-    /* #topnavtitle2{font-size: 3em; margin: 0rem;} */
     #topnav{justify-content: space-evenly;}
     .topnavitem{justify-content: space-evenly;}
     #topnavlinks li{margin: 0rem}
