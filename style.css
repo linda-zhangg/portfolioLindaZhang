@@ -24,7 +24,6 @@
 
 /* structure styling */
 body{
-    /* display:flex; */
     margin: 0;
     background-color: var(--background);
 }
@@ -313,7 +312,7 @@ h2{
 @media screen and (max-width: 850px){
 
     /* home screen */
-    body{flex-direction: column-reverse;}
+    #homediv{flex-direction: column-reverse;}
     main{height:unset; width:unset;}
     #navlinks li{display: inline-block;}
     #sidenav #navlinks{display: flex; justify-content: center;}
